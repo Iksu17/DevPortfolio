@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/094fb30f81.js" crossorigin="anonymous"></script>
+
+    <!-- Update these with your own fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sarah-Fair Portfolio</title>
+</head>
+<body>
+    <header>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">What I Do</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Sarah Fair</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Front-end Developer</p>
+        <img src="img/dev-sarah-01.jpeg" alt="a picture of Sarah Fair smiling" class="intro__img">
+    </section>
+
+    <!--My Services-->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3 class="service_title">Front-End Development</h3>
+                <p class="service_description">
+                    I am a front-end developer. I am interested in developing 
+                    interactive web applications. I believe that well-designed 
+                    web applications are the key to connecting people and businesses 
+                    to the best technologies.    
+                </p>
+            </div> <!--/service-->
+            
+            <div class="service">
+                <h3 class="service_title">Languages I Know</h3>
+                <div class="service_skills">
+                    <div>
+                        <p class="service_skills-list">HTML</p>
+                        <p class="service_skills-list">CSS</p>
+                        <p class="service_skills-list">Javascript</p>
+                        <p class="service_skills-list">React.js</p>
+                    </div>
+                    <div>
+                        <p class="service_skills-list">Node.js</p>
+                        <p class="service_skills-list">C#</p>
+                        <p class="service_skills-list">Python</p>   
+                    </div>
+                </div>
+                
+            </div> <!--/service-->
+
+            <div class="service">
+                <h3 class="service_title">Other Skills</h3>
+                <div class="service_skills">
+                    <div>
+                        <p class="service_skills-list">Writer</p>
+                        <p class="service_skills-list">Unity 3D</p>
+                        <p class="service_skills-list">Blender</p>
+                    </div>
+                    <div>
+                        <p class="service_skills-list">Video Editing</p>
+                        <p class="service_skills-list">Figma</p>
+                        <p class="service_skills-list">Fast Learner</p>
+                    </div>
+                </div>
+                
+            </div> <!--/service-->
+
+        </div>  <!-- / services-->
+
+        <a href="#work" class="btn">My Projects</a>
+
+    </section>
+
+    <!-- About Me-->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Developer based out of Helsinki</p>
+
+        <div class="about-me__body">
+            <p>
+                Hi! I'm Sarah and I love creating things. My interest in the tech world started 
+                when I was young. I have always enjoyed learning how to use technology but I am 
+                even more excited about learning how technology works and sharing what I have 
+                learned with others. Learning to program is one of the most important skills I've 
+                learned aside from writing. I believe whether you are writing or coding are both a 
+                way to share and build ideas with others. 
+
+            </p>
+            <p>
+                Aside from being a developer, I write fiction and I teach. Through my teaching, 
+                I've enjoyed sharing my knowledge of coding with children of all ages. I've developed 
+                classes in both web development and game development for jr. high kids. 
+            </p>
+            <p>
+                In my downtime, I enjoy gardening and spending time with the loveliest golden 
+                retriever on the planet. 
+            </p>
+        </div>
+        <img src="img/dev-sarah-03.jpeg" alt="Sarah next to a sunflower" class="about-me__img">
+    </section>
+
+    <!-- My Work-->
+    <section class="my-work" id="work">
+        <h2 class="section_title section__title--work">My Projects</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of projects I have created</p>
+
+        <div class="portfolio">
+            <!-- Portfolio item 01-->
+            <a href="https://iksu17.github.io/passwordGenerator/" class="portfolio__item" target="_blank">
+                <p class="project-description">Javascript project</p>
+                <img src="img/img_portfolio/password-generator-img.png" alt="" class="portfolio__img">
+                
+            </a>
+
+            <!-- Portfolio item 02-->
+            <a href="https://iksu17.github.io/colorSchemeGenerator/" class="portfolio__item" target="_blank">
+                <p class="project-description">Javascript and API project</p>
+                <img src="img/img_portfolio/color-scheme-generator2-img.jpeg" alt="" class="portfolio__img">
+                
+            </a>
+
+            <!-- Portfolio item 03-->
+            <a href="https://iksu17.github.io/invoiceCreator/" class="portfolio__item" target="_blank">
+                <p class="project-description">Javascript project</p>
+                <img src="img/img_portfolio/invoice-creator-img.jpeg" alt="" class="portfolio__img">
+                
+            </a>
+            
+            <!-- Portfolio item 04-->
+            <a href="https://joyful-brigadeiros-88fad5.netlify.app/" class="portfolio__item" target="_blank">
+                <p class="project-description">React.js and API project</p>
+                <img src="img/img_portfolio/quizzical-img.jpeg" alt="" class="portfolio__img">
+                
+            </a>
+            
+            <!-- Portfolio item 05-->
+            <a href="https://fanciful-heliotrope-f071f4.netlify.app/" class="portfolio__item" target="_blank">
+                <p class="project-description">React.js project</p>
+                <img src="img/img_portfolio/rating-component-img.jpeg" alt="" class="portfolio__img">
+                
+            </a>
+           
+            <!-- Portfolio item 06-->
+            <a href="https://lucent-taffy-a25ec5.netlify.app/" class="portfolio__item" target="_blank">
+                <p class="project-description">React.js project</p>
+                <img src="img/img_portfolio/time-tracker-img.jpeg" alt="" class="portfolio__img">
+                
+            </a>
+            <!-- Portfolio item 07-->
+            <a href="https://iksu17.github.io/SchoolWebsiteExample/index.html" class="portfolio__item" target="_blank">
+                <p class="project-description">Client project</p>
+                <img src="img/img_portfolio/school-website-img.jpeg" alt="" class="portfolio__img">
+                
+            </a>
+            
+            
+        </div>
+
+        <a href="https://github.com/Iksu17 " class="github-link" target="_blank">
+            <p>All project code is on github.</p> 
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Replace with your own email address -->
+        <a href="mailto:fairsacademy@gmail.com" class="footer__link">fairsacademy@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a href="https://github.com/Iksu17" class="social-list__link" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
